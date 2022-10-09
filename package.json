@@ -4,7 +4,7 @@
     "dev": "next",
     "prod:build": "next build",
     "homepage": "https://react.pixelstrap.com/unice/",
-    "vercel-build": "npm run prepare && next build" 
+    "vercel-build": "next build" 
   },
   "dependencies": {
     "@apollo/client": "^3.5.10",
