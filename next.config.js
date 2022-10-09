@@ -1,7 +1,25 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+module.exports = {
+  entry: "./src/js/main.js",
+  output: {
+      path:__dirname+ '/dist/',
+      filename: "bundle.js",
+      publicPath: '/'
+  },
+  devServer: {
+      inline: false,
+      contentBase: "./dist",
+  },
+  module: {
+      loaders: [
+          {
+              test: /\.jsx?$/,
+              exclude:/(node_modules|bower_components)/,
+              loader: 'babel-loader',
+              query: {
+                  presets: ['es2015', 'react']
+              }
+          }
+      ]
+  }
 
-module.exports = nextConfig
+};
