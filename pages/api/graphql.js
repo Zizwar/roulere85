@@ -30,7 +30,7 @@ cors(async (req, res) => {
     path: "/api/graphql",
   })(req, res);
   */
-});
+//});
 // // Apollo Server Micro takes care of body parsing
 export const config = {
   api: {
