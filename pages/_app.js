@@ -8,8 +8,7 @@ import Customizer from '../containers/customizer';
 
 import './index.scss';
 
-import { ApolloProvider } from '@apollo/client';
-import client from '../apollo-client';
+
 
 const { publicRuntimeConfig = {} } = getConfig() || {};
 
@@ -59,7 +58,7 @@ function MyFunctionComponent({ children }) {
 
   return (
     <>
-      <ApolloProvider client={client}>
+   
         <Head>
           <title>Unice</title>
         </Head>
@@ -81,7 +80,7 @@ function MyFunctionComponent({ children }) {
         <div className="tap-top" style={goingUp ? { display: 'block' } : { display: 'none' }} onClick={tapToTop}>
           <div><i className="fa fa-angle-double-up"></i></div>
         </div>
-      </ApolloProvider>
+ 
     </>
   )
 }
