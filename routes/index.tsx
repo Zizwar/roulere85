@@ -1,6 +1,8 @@
 /** @jsx h */
 import { h } from "preact";
 
+import data from "../utils/data.json" assert { type: "json" };
+
 export default function Home() {
   return (
     <body class="body">
@@ -10,61 +12,30 @@ export default function Home() {
         class="loading"
       >
         <div class="loading-wrapper">
-          <img src="images/Logo.svg" width="200" alt="" class="logo-loading" />
-        </div>
+        <h2>{data.title}</h2>   </div>
       </div>
       <div class="site-wrapper">
         <div class="hero-section">
           <div class="navbar">
             <div class="content-wrapper nav">
-              <a href="index.html#" class="logo w-inline-block">
+              <a href="#" class="logo w-inline-block">
                 <div class="mntn-logo w-embed">
-                  <svg
-                    width="108"
-                    height="24"
-                    viewbox="0 0 108 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <g clip-path="url(#clip0)">
-                      <path
-                        d="M0.96 23H9.856V22.552C6.656 22.136 5.696 20.792 5.696 17.56V2.872H5.888L14.208 23.032H15.36L22.816 2.872H22.976V20.728C22.976 22.008 22.176 22.456 19.904 22.552V23H30.944V22.552C28.256 22.456 27.616 21.944 27.616 20.728V2.968C27.616 1.752 28.256 1.208 30.944 1.112V0.695999H22.784L16.736 17.144H16.576L9.984 0.695999H0.96V1.112C3.712 1.176 4.896 2.648 4.896 4.568V17.56C4.896 20.792 3.968 22.168 0.96 22.552V23Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        d="M52.128 23.352H53.664V6.104C53.664 2.936 54.528 1.56 57.536 1.112V0.695999H48.448V1.112C51.68 1.496 52.864 2.936 52.864 6.104V16.728H52.832L40.512 0.695999H32.96V1.112C35.712 1.24 36.896 2.872 36.896 4.824V17.56C36.896 20.792 35.968 22.168 32.96 22.552V23H41.984V22.552C38.72 22.2 37.696 20.792 37.696 17.56V4.728H37.728L52.128 23.352Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        d="M63.6 23H75.696V22.552C72.848 22.488 71.984 21.944 71.984 20.728V1.272H72.752C75.216 1.272 77.136 3.736 79.376 8.088L79.856 8.024L79.696 0.695999H59.568L59.376 8.024L59.856 8.088C62.128 3.64 64.08 1.272 66.512 1.272H67.312V20.728C67.312 21.944 66.416 22.488 63.6 22.552V23Z"
-                        fill="white"
-                      ></path>
-                      <path
-                        d="M102.128 23.352H103.664V6.104C103.664 2.936 104.528 1.56 107.536 1.112V0.695999H98.448V1.112C101.68 1.496 102.864 2.936 102.864 6.104V16.728H102.832L90.512 0.695999H82.96V1.112C85.712 1.24 86.896 2.872 86.896 4.824V17.56C86.896 20.792 85.968 22.168 82.96 22.552V23H91.984V22.552C88.72 22.2 87.696 20.792 87.696 17.56V4.728H87.728L102.128 23.352Z"
-                        fill="white"
-                      ></path>
-                    </g>
-                    <defs>
-                      <clippath id="clip0">
-                        <rect width="108" height="24" fill="white"></rect>
-                      </clippath>
-                    </defs>
-                  </svg>
+                <h3>{data.title}</h3>
                 </div>
               </a>
               <div class="nav-link-wrapper">
-                <a href="index.html#" class="nav-link nav w-inline-block">
+                <a href="#" class="nav-link nav w-inline-block">
                   <div>Equipment</div>
                 </a>
-                <a href="index.html#" class="nav-link nav w-inline-block">
+                <a href="#" class="nav-link nav w-inline-block">
                   <div>About us</div>
                 </a>
-                <a href="index.html#" class="nav-link nav w-inline-block">
+                <a href="#" class="nav-link nav w-inline-block">
                   <div>Blog</div>
                 </a>
               </div>
               <div class="account">
-                <a href="index.html#" class="link-to hero w-inline-block">
+                <a href="#" class="link-to hero w-inline-block">
                   <div class="icon margin-right w-embed">
                     <svg
                       width="24"
@@ -130,12 +101,12 @@ export default function Home() {
             <div class="content-hero">
               <div class="tagline">
                 <div class="tagline-line"></div>
-                <h5 class="heading-tagline">A Hiking guide</h5>
+      
               </div>
               <h1 class="h1-title">
                 Be prepared for the Mountains and beyond!
               </h1>
-              <a href="index.html#Content" class="link-to hero w-inline-block">
+              <a href="#Content" class="link-to hero w-inline-block">
                 <div>scroll down</div>
                 <div class="icon-scroll w-embed">
                   <svg
@@ -155,16 +126,16 @@ export default function Home() {
             </div>
             <div class="nav-slider">
               <div class="nav-slider-links">
-                <a href="index.html#" class="slider-link">
+                <a href="#" class="slider-link">
                   Start
                 </a>
-                <a href="index.html#" class="slider-link">
+                <a href="#" class="slider-link">
                   01
                 </a>
-                <a href="index.html#" class="slider-link">
+                <a href="#" class="slider-link">
                   02
                 </a>
-                <a href="index.html#" class="slider-link">
+                <a href="#" class="slider-link">
                   03
                 </a>
               </div>
@@ -217,7 +188,7 @@ export default function Home() {
                   of hiker are you – novice, moderate, advanced moderate,
                   expert, or expert backpacker?
                 </p>
-                <a href="index.html#" class="link-to hero more w-inline-block">
+                <a href="#" class="link-to hero more w-inline-block">
                   <div>read more</div>
                   <div class="icon-scroll more w-embed">
                     <svg
@@ -261,7 +232,7 @@ export default function Home() {
                   make is wearing jeans and regular clothes, which will get
                   heavy and chafe wif they get sweaty or wet.
                 </p>
-                <a href="index.html#" class="link-to hero more w-inline-block">
+                <a href="#" class="link-to hero more w-inline-block">
                   <div>read more</div>
                   <div class="icon-scroll more w-embed">
                     <svg
@@ -304,7 +275,7 @@ export default function Home() {
                   guide and know that say, in a mile, I make a right turn at the
                   junction..
                 </p>
-                <a href="index.html#" class="link-to hero more w-inline-block">
+                <a href="#" class="link-to hero more w-inline-block">
                   <div>read more</div>
                   <div class="icon-scroll more w-embed">
                     <svg
@@ -336,40 +307,10 @@ export default function Home() {
             <div class="grid footer">
               <div id="w-node-1aa862d1e6f1-0b7ceb38" class="footer-left">
                 <div class="top">
-                  <a href="index.html#" class="logo footer w-inline-block">
-                    <div class="mntn-logo w-embed">
-                      <svg
-                        width="108"
-                        height="24"
-                        viewbox="0 0 108 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g clip-path="url(#clip0)">
-                          <path
-                            d="M0.96 23H9.856V22.552C6.656 22.136 5.696 20.792 5.696 17.56V2.872H5.888L14.208 23.032H15.36L22.816 2.872H22.976V20.728C22.976 22.008 22.176 22.456 19.904 22.552V23H30.944V22.552C28.256 22.456 27.616 21.944 27.616 20.728V2.968C27.616 1.752 28.256 1.208 30.944 1.112V0.695999H22.784L16.736 17.144H16.576L9.984 0.695999H0.96V1.112C3.712 1.176 4.896 2.648 4.896 4.568V17.56C4.896 20.792 3.968 22.168 0.96 22.552V23Z"
-                            fill="white"
-                          ></path>
-                          <path
-                            d="M52.128 23.352H53.664V6.104C53.664 2.936 54.528 1.56 57.536 1.112V0.695999H48.448V1.112C51.68 1.496 52.864 2.936 52.864 6.104V16.728H52.832L40.512 0.695999H32.96V1.112C35.712 1.24 36.896 2.872 36.896 4.824V17.56C36.896 20.792 35.968 22.168 32.96 22.552V23H41.984V22.552C38.72 22.2 37.696 20.792 37.696 17.56V4.728H37.728L52.128 23.352Z"
-                            fill="white"
-                          ></path>
-                          <path
-                            d="M63.6 23H75.696V22.552C72.848 22.488 71.984 21.944 71.984 20.728V1.272H72.752C75.216 1.272 77.136 3.736 79.376 8.088L79.856 8.024L79.696 0.695999H59.568L59.376 8.024L59.856 8.088C62.128 3.64 64.08 1.272 66.512 1.272H67.312V20.728C67.312 21.944 66.416 22.488 63.6 22.552V23Z"
-                            fill="white"
-                          ></path>
-                          <path
-                            d="M102.128 23.352H103.664V6.104C103.664 2.936 104.528 1.56 107.536 1.112V0.695999H98.448V1.112C101.68 1.496 102.864 2.936 102.864 6.104V16.728H102.832L90.512 0.695999H82.96V1.112C85.712 1.24 86.896 2.872 86.896 4.824V17.56C86.896 20.792 85.968 22.168 82.96 22.552V23H91.984V22.552C88.72 22.2 87.696 20.792 87.696 17.56V4.728H87.728L102.128 23.352Z"
-                            fill="white"
-                          ></path>
-                        </g>
-                        <defs>
-                          <clippath id="clip0">
-                            <rect width="108" height="24" fill="white"></rect>
-                          </clippath>
-                        </defs>
-                      </svg>
-                    </div>
+                  <a href="#" class="logo footer w-inline-block">
+                  <div class="mntn-logo w-embed">
+                <h3>{data.title}</h3>
+                </div>
                   </a>
                   <div class="footer-text">
                     Get out there &amp; discover your next slope, mountain &amp;
@@ -377,9 +318,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div class="copyright">
-                  Copyright 2020 MNTN, Inc. Terms &amp; Privacy
+                  Copyright 2022 {data.title}, Inc. Terms &amp; Privacy
                   <br />A concept by{" "}
-                  <a href="http://roulere85.com" target="_blank" class="author">
+                  <a href={data.url} target="_blank" class="author">
                     Kryston Schwarze
                   </a>
                 </div>
@@ -388,19 +329,19 @@ export default function Home() {
                 <div class="links">
                   <div id="w-node-bec01f52c19d-0b7ceb38" class="footer-links">
                     <h4>More on The Blog</h4>
-                    <a href="index.html#" class="footer-link">
-                      About MNTN
+                    <a href="#" class="footer-link">
+                      About {data.title}
                     </a>
-                    <a href="index.html#" class="footer-link">
+                    <a href="#" class="footer-link">
                       Contributors &amp; Writers
                     </a>
-                    <a href="index.html#" class="footer-link">
+                    <a href="#" class="footer-link">
                       Write For Us
                     </a>
-                    <a href="index.html#" class="footer-link">
+                    <a href="#" class="footer-link">
                       Contact Us
                     </a>
-                    <a href="index.html#" class="footer-link">
+                    <a href="#" class="footer-link">
                       Privacy Policy
                     </a>
                   </div>
@@ -408,14 +349,14 @@ export default function Home() {
                     id="w-node-98e738a28e3d-0b7ceb38"
                     class="footer-links _02"
                   >
-                    <h4>More on MNTN</h4>
-                    <a href="index.html#" class="footer-link">
+                    <h4>More on {data.title}</h4>
+                    <a href="#" class="footer-link">
                       The Team
                     </a>
-                    <a href="index.html#" class="footer-link">
+                    <a href="#" class="footer-link">
                       Jobs
                     </a>
-                    <a href="index.html#" class="footer-link">
+                    <a href="#" class="footer-link">
                       Press
                     </a>
                   </div>

@@ -4,6 +4,8 @@ import { h } from "preact";
 import { AppProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 
+import seo from "../utils/seo.json" assert { type: "json" };
+
 export default function App({ Component }: AppProps) {
   return (
     <div>
@@ -12,15 +14,15 @@ export default function App({ Component }: AppProps) {
         data-wf-site="5e2d678660dc1a91f8ef1b43"
       >
         <Head>
-          <meta charset="utf-8" />
-          <title>MNTN | Landing Page</title>
+          <meta  charset="utf-8" />
+          <title>{seo.title}</title>
           <meta
-            content="This is a concept for a blog landing page about hiking and traveling. By Kryston Schwarze."
+            content={seo.description}
             name="description"
           />
-          <meta content="MNTN | Landing Page" property="og:title" />
+          <meta content={seo.title} property="og:title" />
           <meta
-            content="This is a concept for a blog landing page about hiking and traveling. By Kryston Schwarze."
+            content={seo.description}
             property="og:description"
           />
           <meta
@@ -29,7 +31,7 @@ export default function App({ Component }: AppProps) {
           />
           <meta content="summary" name="twitter:card" />
           <meta content="width=device-width, initial-scale=1" name="viewport" />
-          <meta content="Webflow" name="generator" />
+          <meta content={seo.title} name="generator" />
           <link href="css/normalize.css" rel="stylesheet" type="text/css" />
           <link href="css/webflow.css" rel="stylesheet" type="text/css" />
           <link href="css/mntn.webflow.css" rel="stylesheet" type="text/css" />

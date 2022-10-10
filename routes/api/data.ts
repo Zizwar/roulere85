@@ -1,13 +1,13 @@
 import { HandlerContext } from "$fresh/server.ts";
 
-import cv from "../../utils/cv.json" assert { type: "json" };
+import data from "../../utils/data.json" assert { type: "json" };
 
 
 export const handler = (_req: Request, _ctx: HandlerContext): Response => {
 
-  return Response.json(cv)
+  return Response.json(data)
 
-  //const body = JSON.stringify(cv);
+  //const body = JSON.stringify(data);
  // return new Response(body);
 };
 

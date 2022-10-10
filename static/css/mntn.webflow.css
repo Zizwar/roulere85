@@ -401,8 +401,7 @@ a {
   position: relative;
   z-index: 50;
   padding-top: 200px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(11, 29, 38, 0)), color-stop(20%, #0b1d26));
-  background-image: linear-gradient(180deg, rgba(11, 29, 38, 0), #0b1d26 20%);
+  background-image: linear-gradient(180deg, rgba(11, 29, 38, 0), #005216  20%);
 }
 
 .grid {
@@ -536,7 +535,7 @@ a {
   -webkit-align-items: flex-start;
   -ms-flex-align: start;
   align-items: flex-start;
-  background-color: rgba(3, 18, 26, 0.8);
+  background-color: rgb(26 136 15 / 82%);
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
 }
@@ -582,7 +581,7 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #0b1d26;
+  background-color: #056926;
 }
 
 .loading {
@@ -610,13 +609,13 @@ a {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  background-color: #0b1d26;
+  background-color: #056926;
 }
 
 .loading-02 {
   width: 100%;
   height: 100%;
-  background-color: #0b1d26;
+  background-color: #056926;
 }
 
 .lottie-animation {

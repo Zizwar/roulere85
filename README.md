@@ -4,7 +4,7 @@
 
 2- clone: 
 ```sh 
-git clone https://github.com/Zizwar/cveno 
+git clone https://github.com/Zizwar/roulers86 
 ```
 
 ## run
