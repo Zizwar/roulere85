@@ -12,7 +12,8 @@ export default function Home() {
         class="loading"
       >
         <div class="loading-wrapper">
-        <h2>{data.title}</h2>   </div>
+          <h2>{data.title}</h2>{" "}
+        </div>
       </div>
       <div class="site-wrapper">
         <div class="hero-section">
@@ -20,10 +21,10 @@ export default function Home() {
             <div class="content-wrapper nav">
               <a href="#" class="logo w-inline-block">
                 <div class="mntn-logo w-embed">
-                <h3>{data.title}</h3>
+                  <h3>{data.title}</h3>
                 </div>
               </a>
-              <div class="nav-link-wrapper">
+              <div class="nav-link-wrapper" style="display:none">
                 <a href="#" class="nav-link nav w-inline-block">
                   <div>Equipment</div>
                 </a>
@@ -101,13 +102,10 @@ export default function Home() {
             <div class="content-hero">
               <div class="tagline">
                 <div class="tagline-line"></div>
-      
               </div>
-              <h1 class="h1-title">
-                Be prepared for the Mountains and beyond!
-              </h1>
+              <h1 class="h1-title">{data.description}</h1>
               <a href="#Content" class="link-to hero w-inline-block">
-                <div>scroll down</div>
+                <div>scroll </div>
                 <div class="icon-scroll w-embed">
                   <svg
                     width="16"
@@ -170,137 +168,51 @@ export default function Home() {
           />
           <div class="gradient-hero"></div>
         </div>
-        <div class="content-section">
-          <div id="Content" class="content-wrapper content">
-            <div class="grid">
-              <div id="w-node-435c3832b714-0b7ceb38" class="content-text">
-                <div class="count">01</div>
-                <div class="tagline">
-                  <div class="tagline-line"></div>
-                  <h5 class="heading-tagline">GEt Started</h5>
-                </div>
-                <h2 class="head">What level of  hiker are you?</h2>
-                <p>
-                  Determining what level of hiker you are can be an important
-                  tool when planning future hikes. This hiking level guide will
-                  help you plan hikes according to different hike ratings set by
-                  various websites like All Trails and Modern Hiker. What type
-                  of hiker are you – novice, moderate, advanced moderate,
-                  expert, or expert backpacker?
-                </p>
-                <a href="#" class="link-to hero more w-inline-block">
-                  <div>read more</div>
-                  <div class="icon-scroll more w-embed">
-                    <svg
-                      width="16"
-                      height="24"
-                      viewbox="0 0 16 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
+        <div id="Content" class="content-section">
+          {data.contents?.map(
+            ({ count, title, subTitle, text, link, image }, index) => (
+              <div class="content-wrapper content">
+                <div class="grid">
+                  <div id="w-node-435c3832b714-0b7ceb38" class="content-text">
+                    <div class="count">{count}</div>
+                    <div class="tagline">
+                      <div class="tagline-line"></div>
+                      <h5 class="heading-tagline">{subTitle}</h5>
+                    </div>
+                    <h2 class="head">{title}</h2>
+                    <p>{text}</p>
+                    <a href={link} class="link-to hero more w-inline-block">
+                      <div></div>
+                      <div class="icon-scroll more w-embed">
+                        <svg
+                          width="16"
+                          height="24"
+                          viewbox="0 0 16 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z"
+                            fill="currentColor"
+                          ></path>
+                        </svg>
+                      </div>
+                    </a>
                   </div>
-                </a>
-              </div>
-              <img
-                src="images/01.png"
-                id="w-node-39e02eb8b346-0b7ceb38"
-                alt=""
-                class="image _01"
-              />
-            </div>
-          </div>
-          <div class="content-wrapper content">
-            <div class="grid">
-              <div id="w-node-12f012158455-0b7ceb38" class="content-text">
-                <div class="count">02</div>
-                <div class="tagline">
-                  <div class="tagline-line"></div>
-                  <h5 class="heading-tagline">Hiking Essentials</h5>
+                  <img
+                    src={image}
+                    id={
+                      index % 2
+                        ? "w-node-39e02eb8b346-0b7ceb38"
+                        : "w-node-af252b1c3822-0b7ceb38"
+                    }
+                    alt={title}
+                    class="image _01"
+                  />
                 </div>
-                <h2 class="head">Picking the right Hiking Gear!</h2>
-                <p>
-                  The nice thing about beginning hiking is that you don’t really
-                  need any special gear, you can probably get away with things
-                  you already have.
-                  <br />
-                  Let’s start with clothing. A typical mistake hiking beginners
-                  make is wearing jeans and regular clothes, which will get
-                  heavy and chafe wif they get sweaty or wet.
-                </p>
-                <a href="#" class="link-to hero more w-inline-block">
-                  <div>read more</div>
-                  <div class="icon-scroll more w-embed">
-                    <svg
-                      width="16"
-                      height="24"
-                      viewbox="0 0 16 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
               </div>
-              <img
-                src="images/02.png"
-                id="w-node-12f012158464-0b7ceb38"
-                alt=""
-                class="image"
-              />
-            </div>
-          </div>
-          <div class="content-wrapper content">
-            <div class="grid">
-              <div id="w-node-af252b1c3813-0b7ceb38" class="content-text">
-                <div class="count">03</div>
-                <div class="tagline">
-                  <div class="tagline-line"></div>
-                  <h5 class="heading-tagline">where you go is the key</h5>
-                </div>
-                <h2 class="head">Understand Your Map &amp; Timing</h2>
-                <p>
-                  To start, print out the hiking guide and map. If it’s raining,
-                  throw them in a Zip-Lock bag. Read over the guide, study the
-                  map, and have a good idea of what to expect. I like to know
-                  what my next landmark is as I hike. For example, I’ll read the
-                  guide and know that say, in a mile, I make a right turn at the
-                  junction..
-                </p>
-                <a href="#" class="link-to hero more w-inline-block">
-                  <div>read more</div>
-                  <div class="icon-scroll more w-embed">
-                    <svg
-                      width="16"
-                      height="24"
-                      viewbox="0 0 16 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                </a>
-              </div>
-              <img
-                src="images/03.png"
-                id="w-node-af252b1c3822-0b7ceb38"
-                alt=""
-                class="image"
-              />
-            </div>
-          </div>
+            )
+          )}
         </div>
         <div class="footer">
           <div class="content-wrapper content footer">
@@ -308,9 +220,9 @@ export default function Home() {
               <div id="w-node-1aa862d1e6f1-0b7ceb38" class="footer-left">
                 <div class="top">
                   <a href="#" class="logo footer w-inline-block">
-                  <div class="mntn-logo w-embed">
-                <h3>{data.title}</h3>
-                </div>
+                    <div class="mntn-logo w-embed">
+                      <h3>{data.title}</h3>
+                    </div>
                   </a>
                   <div class="footer-text">
                     Get out there &amp; discover your next slope, mountain &amp;
