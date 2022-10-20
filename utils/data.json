@@ -23,7 +23,7 @@
       "subTitle": "Hiking Essentials",
       "text": " Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type",
       "link": "https://www.google.com?q=RoulezE85",
-      "image": "images/02.png"
+      "types": "agenda"
     },
     {
       "count": "03",
@@ -31,7 +31,7 @@
       "subTitle": "Hiking Essentials",
       "text": "The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.<br /> Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.",
       "link": "https://www.google.com?q=RoulezE85",
-      "image": "images/03.png"
+      "types": "maps"
     }
   ]
 }

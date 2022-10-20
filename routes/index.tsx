@@ -12,7 +12,7 @@ export default function Home() {
         class="loading"
       >
         <div class="loading-wrapper">
-          <h2>{data.title}</h2>{" "}
+          <h2>{data.title}</h2>
         </div>
       </div>
       <div class="site-wrapper">
@@ -170,7 +170,7 @@ export default function Home() {
         </div>
         <div id="Content" class="content-section">
           {data.contents?.map(
-            ({ count, title, subTitle, text, link, image }, index) => (
+            ({ count, title, subTitle, text, link, image, types }, index) => (
               <div class="content-wrapper content">
                 <div class="grid">
                   <div id="w-node-435c3832b714-0b7ceb38" class="content-text">
@@ -199,16 +199,48 @@ export default function Home() {
                       </div>
                     </a>
                   </div>
-                  <img
-                    src={image}
-                    id={
-                      index % 2
-                        ? "w-node-12f012158464-0b7ceb38"
-                        : "w-node-39e02eb8b346-0b7ceb38"
-                    }
-                    alt={title}
-                    class="image _01"
-                  />
+                  {types === "agenda" && (
+                    <iframe
+                      width="100%"
+                      height="400"
+                      src="https://calendar.google.com/calendar/embed?title=Agenda%20Rouler&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=8d3fc8l9g04n7r9im45fsn08ak%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=America%2FNew_York"
+                      style="border-width:0"
+                      frameborder="0"
+                      scrolling="no"
+                      id={
+                        index % 2
+                          ? "w-node-12f012158464-0b7ceb38"
+                          : "w-node-39e02eb8b346-0b7ceb38"
+                      }
+                    ></iframe>
+                  )}
+                  {types === "maps" && (
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1401.4324977477188!2d7.203279940663153!3d43.689864651605276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd1bd1b511f95%3A0xfcbe635c9a04548c!2s19%20Imp.%20de%20la%20Gaiet%C3%A9%2C%2006200%20Nice%2C%20France!5e0!3m2!1sen!2sma!4v1666305462963!5m2!1sen!2sma"
+                      width="600"
+                      height="450"
+                      style="border:0;"
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      id={
+                        index % 2
+                          ? "w-node-12f012158464-0b7ceb38"
+                          : "w-node-39e02eb8b346-0b7ceb38"
+                      }
+                    ></iframe>
+                  )}
+                  {image && (
+                    <img
+                      src={image}
+                      id={
+                        index % 2
+                          ? "w-node-12f012158464-0b7ceb38"
+                          : "w-node-39e02eb8b346-0b7ceb38"
+                      }
+                      alt={title}
+                      class="image _01"
+                    />
+                  )}
                 </div>
               </div>
             )
