@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 
-import data from "../utils/data.json" assert { type: "json" };
+import data from "../utils/data.ts"; //assert { type: "json" };
 
 export default function Home() {
   return (
