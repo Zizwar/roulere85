@@ -1,4 +1,4 @@
-export default {
+export const data = {
   "url": "https://roulere85.com/",
   "title": "Roulez E85",
   "description": "Payer moins cher votre carburant",

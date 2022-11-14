@@ -1,7 +1,7 @@
 /** @jsx h */
 import { h } from "preact";
 
-import data from "../utils/data.ts"; //assert { type: "json" };
+import {data} from "../utils/data.ts"; //assert { type: "json" };
 
 export default function Home() {
   return (
@@ -180,7 +180,7 @@ export default function Home() {
                       <h5 class="heading-tagline">{subTitle}</h5>
                     </div>
                     <h2 class="head">{title}</h2>
-                    <p>{text}</p>
+                    <span>{text.replaceAll(";","\n")}</span>
                     <a href={link} class="link-to hero more w-inline-block">
                       <div></div>
                       <div class="icon-scroll more w-embed">

@@ -1,6 +1,6 @@
 import { HandlerContext } from "$fresh/server.ts";
 
-import data from "../../utils/data.json" assert { type: "json" };
+import {data} from "../../utils/data.ts" 
 
 
 export const handler = (_req: Request, _ctx: HandlerContext): Response => {
